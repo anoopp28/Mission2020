@@ -58,6 +58,7 @@ public class Array {
 		
 		
 	// String
+		System.out.println("---------------------");
 		String s[] = new String[3];
 		s[0]= "Anoop";
 		s[1]= "Kumar";

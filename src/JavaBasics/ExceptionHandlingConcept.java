@@ -23,7 +23,7 @@ public class ExceptionHandlingConcept {
 		try {
 			int j = 9/0;
 		}
-		catch(ArithmeticException e) {
+		catch(Exception e) {
 			e.printStackTrace();  //method used to display the exception in console
 		System.out.println(e.getMessage());
 		

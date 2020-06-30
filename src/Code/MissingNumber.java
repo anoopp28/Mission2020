@@ -1,5 +1,8 @@
 package Code;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class MissingNumber {
 
 	public static void main(String[] args) {
@@ -21,7 +24,8 @@ public class MissingNumber {
 		 System.out.println(sum1);
 		 
 		System.out.println("Missing number is " +(sum1-sum));
-        
+		
+	
 	}
 
 }

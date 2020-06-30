@@ -9,14 +9,15 @@ public class ThrowException {
 		
 		try {
 		throw new Exception("Anoop Exception");    //it will call Exception constructor with string parameter
-		} catch(Exception e){
+		} 
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		
  
 		System.out.println("Start");
 		
-		String Exec_flag = " ";
+		String Exec_flag = " 1 ";
 		if(Exec_flag.equals(" ")) {
 			try {
 			throw new Exception("Exec_flag is null exception");
@@ -26,7 +27,7 @@ public class ThrowException {
 			}
 		}
 			else {
-				System.out.println("Test");
+				System.out.println("Test123");
 	}
 		System.out.println("Test");   // After handling exception
 	}

@@ -6,7 +6,7 @@ public class TypeCasting {
 	
 		//Implicit type casting or up casting
 		int x = 'A';
-		System.out.println(x);
+	    System.out.println(x);
 		
 		//Explicit type casting or down casting
 		

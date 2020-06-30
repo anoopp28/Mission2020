@@ -40,7 +40,7 @@ public class ChallengeSelenium {
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);   
 		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS); 
 
-		List<WebElement> listobj =driver.findElements(By.xpath("//ul[@class='listing-results clearfix js-gtm-list']//li//div//div/preceding-sibling::div//a[@class='listing-results-price text-price']"));
+		List<WebElement> listobj =driver.findElements(By.xpath("//div[@class='listing-results-right clearfix']//a[@class='listing-results-price text-price']"));
 		 
 		
 //		/html[1]/body[1]/div[4]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[2]/a[1]
@@ -62,10 +62,9 @@ public class ChallengeSelenium {
 			System.out.println(listobj.get(i).getText());
 			if(i==20) {
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
-				WebElement PropClick = driver.findElement(By.xpath(Before_xpath+i+After_xpath));
+			    driver.findElement(By.xpath(Before_xpath+i+After_xpath)).click();
+				break;
 				
-				JavascriptExecutor js =  ((JavascriptExecutor)driver);
-				js.executeScript("argument[0].click();", PropClick);
 			}
 		}	
 		

@@ -50,6 +50,7 @@ public class DuplicateElement {
 		 else {
 			 store1.put(name, ++count);
 			 System.out.println("Duplicate is "+name);  
+			 System.out.println("Duplicate  "+count);  
 		 }
 			
 			

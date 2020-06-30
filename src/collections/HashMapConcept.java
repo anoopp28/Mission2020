@@ -11,9 +11,11 @@ public class HashMapConcept {
 		hm.put(1, "Anoop");
 		hm.put(2, "Kumar");
 		hm.put(3, "QA");
+		hm.put(1, "Anoop");
+		hm.put(2, "Anoop");
 
 		System.out.println(hm.get(1));
-		System.out.println(hm.get(5));
+		System.out.println(hm.get(4));
 		
 		for(Entry<Integer, String> m : hm.entrySet()) {
 			System.out.println(m.getKey()+" "+ m.getValue() );

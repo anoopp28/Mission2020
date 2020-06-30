@@ -16,6 +16,7 @@ public class HashTableConcept {
 		h1.put(2, "Selenium");
 		h1.put(3, "Selenium");
 		h1.put(4, "Selenium");
+		h1.put(5,"Anoop");
 		
 		
 		// To create clone copy

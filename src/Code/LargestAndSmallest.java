@@ -4,7 +4,7 @@ public class LargestAndSmallest {
 
 	public static void main(String[] args) {
 		
-		int numbers[] = { -10, 24, 50 , -88 , 200 , 355, -89 , -87};
+		int numbers[] = { 400,-10, 24, 50 , -88 , 200 , 355, -89 , -87};
 		int len = numbers.length;
 	
 		int largest = numbers[0];

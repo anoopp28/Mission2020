@@ -28,13 +28,13 @@ public class BootstrapDropdown {
 		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS); 
 		
 		
-		List<WebElement> list =driver.findElements(By.xpath("//li[@id='menu-item-7090']//li//a"));
+		List<WebElement> list =driver.findElements(By.xpath("//a[@class='main-link']"));
 		System.out.println(list.size());
 		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS); 
 		
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i).getText());
-			if(list.get(i).getText().equals("Java")) {
+			if(list.get(i).getText().equals("Kotlin")) {
 				list.get(i).click();
 				break;
 			}
